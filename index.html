@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div> </div>
+    <div class="banner"></div>
+    <nav class="ul"></nav>
+    <div class="container">
+        <div class="game-card">
+            <h1>Math Game</h1>
+
+            <div class="score-board">
+                <p>Correct Answers: <span id="score">0</span>/5</p>
+            </div>
+
+            <div id="gameContent" class="game-content">
+                <div class="question-section">
+                    <h2 id="question">Loading question...</h2>
+                </div>
+
+                <div class="input-section">
+                    <input type="number" id="answerInput" placeholder="Enter your answer" autocomplete="off">
+                    <button id="submitBtn" class="btn btn-primary">Submit Answer</button>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+            </div>
+
+            <div id="winScreen" class="win-screen hidden">
+                <h2>🎉 You Won! 🎉</h2>
+                <p>You answered 5 questions correctly!</p>
+                <button id="restartBtn" class="btn btn-success">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
